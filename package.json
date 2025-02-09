@@ -1,0 +1,28 @@
+{
+  "name": "typeshare",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon",
+    "dev": "npm i && npm run build && concurrently npm:dev:*",
+    "build": "npm run build -w packages && npm run build -w apps/core",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:ui": "npm run -w apps/ui dev",
+    "dev:core": "npm run -w apps/core dev"
+  },
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "packages/*"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "dependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

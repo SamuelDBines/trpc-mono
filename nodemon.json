@@ -1,0 +1,13 @@
+{
+  "watch": [
+    "./apps/core",
+    "./packages"
+  ],
+  "ext": "ts,json",
+  "ignore": [
+    "dist/**/*",
+    "src/**/*.test.ts",
+    "node_modules/**/*"
+  ],
+  "exec": "npm run dev"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "@packages/database",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --incremental",
+    "migrate": "npm run build && node ./dist/src/migrate.js",
+    "build:clean": "tsc --build --clean"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.11.11"
+  }
+}
