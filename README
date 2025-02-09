@@ -1,0 +1,6 @@
+- apps
+  - core (main api connection for trpc)
+  - ui (react frontend)
+- packages
+  - common - (trpc models probably interfaces also)
+  - database - (pg / migrations / sql)
